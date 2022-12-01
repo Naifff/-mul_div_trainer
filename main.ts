@@ -5,9 +5,13 @@ input.onButtonPressed(Button.A, function () {
             b = randint(1, 99)
             c = a * b
             d = 1
-            basic.showString("  " + a + "*" + b + " ")
+            proportionalFont.showSpace(5, 150)
+            proportionalFont.showString("" + a + "x" + b, 150)
+            proportionalFont.showSpace(5, 150)
         } else {
-            basic.showString(" " + a + "*" + b + " ")
+            proportionalFont.showSpace(5, 150)
+            proportionalFont.showString("" + a + "x" + b, 150)
+            proportionalFont.showSpace(5, 150)
         }
     } else {
         if (d == 0) {
@@ -15,9 +19,13 @@ input.onButtonPressed(Button.A, function () {
             b = randint(1, 99)
             a = c * b
             d = 1
-            basic.showString("  " + a + "/" + b + " ")
+            proportionalFont.showSpace(5, 150)
+            proportionalFont.showString("" + a + "/" + b, 150)
+            proportionalFont.showSpace(5, 150)
         } else {
-            basic.showString(" " + a + "/" + b + " ")
+            proportionalFont.showSpace(5, 150)
+            proportionalFont.showString("" + a + "/" + b, 150)
+            proportionalFont.showSpace(5, 150)
         }
     }
 })
@@ -44,7 +52,9 @@ input.onButtonPressed(Button.AB, function () {
     d = 0
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showNumber(c)
+    proportionalFont.showSpace(5, 150)
+    proportionalFont.showNumber(c, 150)
+    proportionalFont.showSpace(5, 150)
     d = 0
 })
 let c = 0
